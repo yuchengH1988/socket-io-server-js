@@ -30,8 +30,10 @@ for front-ent
 ```js
 
 // 1. To connect socket.io under router 'http://localhost3001/notification'
+
 // 2. active your name to notification
 socketNotification.emit("active", name)
+
 // 3. received message
 socketNotification.on("received_notification", (data) => {
   setNotification(data)
@@ -58,25 +60,25 @@ Follow these steps to install and set up the project locally:
 
 1. Clone the repository
 
-   ```cmd
-   git clone <https://github.com/yourusername/projectname.git>
+   ```bash
+   git clone https://github.com/yuchengH1988/socket-io-server-js
    ```
 
 2. Navigate into the project directory
 
-   ```cmd
-   cd projectname
+   ```bash
+   cd project-name
    ```
 
 3. Install dependencies
 
-   ```cmd
+   ```bash
    npm install
    ```
 
 4. Start the server
 
-   ```cmd
+   ```bash
    npm run dev
    ```
 
